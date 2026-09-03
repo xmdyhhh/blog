@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Ghost runtime - never commit data, logs, secrets
+runtime/
+
+# Data backups
+backups/
+
+# Tools (Node.js portable)
+tools/
+
+# Sensitive scripts
+scripts/api-keys.json
+scripts/admin-session.xml
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+dist/
+build/
+*.zip
+!theme/*.zip
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
