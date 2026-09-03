@@ -1,0 +1,373 @@
+/* ============================================
+   OSS Blog Theme - Custom Styles
+   开源软件实验博客自定义主题样式
+   ============================================ */
+
+/* === 导航栏自定义 === */
+.oss-navigation {
+    border-bottom: 2px solid var(--ghost-accent-color, #3eb0ef);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.oss-logo {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.oss-nav-menu a {
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.oss-nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--ghost-accent-color, #3eb0ef);
+    transition: width 0.3s ease;
+}
+
+.oss-nav-menu a:hover::after {
+    width: 100%;
+}
+
+.oss-subscribe-btn {
+    background: var(--ghost-accent-color, #3eb0ef);
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.oss-subscribe-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(62, 176, 239, 0.3);
+}
+
+/* === 文章卡片自定义 === */
+.oss-post-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.oss-post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.oss-card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.oss-card-image img {
+    transition: transform 0.5s ease;
+}
+
+.oss-post-card:hover .oss-card-image img {
+    transform: scale(1.05);
+}
+
+.oss-card-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--ghost-accent-color, #3eb0ef);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.oss-tag-icon {
+    font-size: 0.9rem;
+}
+
+.oss-card-title {
+    line-height: 1.3;
+    transition: color 0.2s ease;
+}
+
+.oss-post-card:hover .oss-card-title {
+    color: var(--ghost-accent-color, #3eb0ef);
+}
+
+.oss-card-excerpt {
+    color: #666;
+    line-height: 1.6;
+}
+
+.oss-card-meta {
+    color: #999;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.oss-reading-time {
+    color: var(--ghost-accent-color, #3eb0ef);
+    font-weight: 500;
+}
+
+/* === 相关文章推荐自定义 === */
+.oss-related-posts {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.oss-related-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.oss-related-icon {
+    font-size: 1.3rem;
+}
+
+.oss-related-subtitle {
+    color: #888;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.oss-related-feed {
+    gap: 24px;
+}
+
+.oss-related-note {
+    grid-column: 1 / -1;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* === 搜索增强样式 === */
+.oss-search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15vh;
+    backdrop-filter: blur(4px);
+}
+
+.oss-search-overlay.active {
+    display: flex;
+}
+
+.oss-search-modal {
+    background: #fff;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 640px;
+    max-height: 70vh;
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+    animation: ossSearchSlideIn 0.2s ease;
+}
+
+@keyframes ossSearchSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.oss-search-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+    gap: 12px;
+}
+
+.oss-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 8px 0;
+}
+
+.oss-search-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.oss-search-close:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.oss-search-results {
+    overflow-y: auto;
+    max-height: calc(70vh - 70px);
+    padding: 8px;
+}
+
+.oss-search-result-item {
+    display: block;
+    padding: 14px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s;
+}
+
+.oss-search-result-item:hover {
+    background: #f8f9fa;
+}
+
+.oss-search-result-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.oss-search-result-excerpt {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.oss-search-highlight {
+    background: #fff3cd;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.oss-search-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+}
+
+.oss-search-no-results-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.oss-search-suggestions {
+    margin-top: 12px;
+    font-size: 0.9rem;
+}
+
+.oss-search-suggestion-tag {
+    display: inline-block;
+    background: #e9ecef;
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.oss-search-suggestion-tag:hover {
+    background: var(--ghost-accent-color, #3eb0ef);
+    color: #fff;
+}
+
+.oss-search-loading {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+}
+
+.oss-search-spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #eee;
+    border-top-color: var(--ghost-accent-color, #3eb0ef);
+    border-radius: 50%;
+    animation: ossSearchSpin 0.8s linear infinite;
+}
+
+@keyframes ossSearchSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* === 文章详情页自定义 === */
+.gh-article-title {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.gh-article-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(62, 176, 239, 0.1);
+    color: var(--ghost-accent-color, #3eb0ef);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* === 响应式优化 === */
+@media (max-width: 768px) {
+    .oss-related-title {
+        font-size: 1.25rem;
+    }
+    
+    .oss-search-modal {
+        width: 95%;
+        margin-top: 10vh;
+    }
+    
+    .oss-post-card:hover {
+        transform: none;
+    }
+}
+
+/* === 无障碍高对比模式支持 === */
+@media (prefers-contrast: high) {
+    .oss-post-card {
+        border-width: 2px;
+    }
+    
+    .oss-card-excerpt {
+        color: #333;
+    }
+}
+
+/* === 减少动画偏好 === */
+@media (prefers-reduced-motion: reduce) {
+    .oss-post-card,
+    .oss-card-image img,
+    .oss-nav-menu a::after,
+    .oss-search-modal {
+        transition: none;
+        animation: none;
+    }
+}
