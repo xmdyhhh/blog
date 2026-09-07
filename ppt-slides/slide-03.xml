@@ -1,0 +1,20 @@
+<slide>
+  <style><fill><fillColor color="rgb(248,250,252)"/></fill></style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="960" height="70"><fill><fillColor color="linear-gradient(90deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/></fill></shape>
+    <shape type="text" topLeftX="50" topLeftY="15" width="600" height="40"><content textType="headline" fontSize="24" color="rgba(255,255,255,1)" bold="true"><p>01 项目背景与目标</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="100" width="420" height="180" presetHandlers="12"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="text" topLeftX="70" topLeftY="115" width="380" height="30"><content textType="sub-headline" fontSize="17" color="rgba(30,58,138,1)" bold="true"><p>实验背景</p></content></shape>
+    <shape type="text" topLeftX="70" topLeftY="155" width="380" height="110"><content textType="body" fontSize="13" color="rgba(51,65,85,1)" lineSpacing="multiple:1.6"><p>开源软件已成为现代软件开发的基石。本实验要求基于成熟开源项目进行二次开发，深入理解开源项目的架构、代码规范和协作流程，培养在真实开源代码基础上进行定制化开发的能力。</p></content></shape>
+    <shape type="round-rect" topLeftX="490" topLeftY="100" width="420" height="180" presetHandlers="12"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="text" topLeftX="510" topLeftY="115" width="380" height="30"><content textType="sub-headline" fontSize="17" color="rgba(30,58,138,1)" bold="true"><p>核心目标</p></content></shape>
+    <shape type="text" topLeftX="510" topLeftY="155" width="380" height="110"><content textType="body" fontSize="13" color="rgba(51,65,85,1)" lineSpacing="multiple:1.6"><ul><li><p>基于 Ghost 搭建可运行的个人博客系统</p></li><li><p>实现可注册、可写作、可评论、可搜索四大功能</p></li><li><p>开发自定义主题，至少完成一项自主扩展功能</p></li><li><p>遵循开源规范，完成 Git 版本管理与文档交付</p></li></ul></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="310" width="860" height="170" presetHandlers="12"><fill><fillColor color="rgba(239,246,255,1)"/></fill><border color="rgba(147,197,253,1)" width="1"/></shape>
+    <shape type="text" topLeftX="70" topLeftY="325" width="820" height="30"><content textType="sub-headline" fontSize="17" color="rgba(30,58,138,1)" bold="true"><p>功能需求清单</p></content></shape>
+    <shape type="text" topLeftX="70" topLeftY="365" width="200" height="100"><content textType="body" fontSize="13" color="rgba(30,41,59,1)" lineSpacing="multiple:1.8"><p><strong>用户管理</strong></p><p>管理员账号</p><p>会员注册/登录</p><p>权限分级控制</p></content></shape>
+    <shape type="text" topLeftX="280" topLeftY="365" width="200" height="100"><content textType="body" fontSize="13" color="rgba(30,41,59,1)" lineSpacing="multiple:1.8"><p><strong>内容管理</strong></p><p>文章创建/编辑</p><p>标签分类管理</p><p>Markdown 支持</p></content></shape>
+    <shape type="text" topLeftX="490" topLeftY="365" width="200" height="100"><content textType="body" fontSize="13" color="rgba(30,41,59,1)" lineSpacing="multiple:1.8"><p><strong>互动功能</strong></p><p>会员评论系统</p><p>相关文章推荐</p><p>搜索增强</p></content></shape>
+    <shape type="text" topLeftX="700" topLeftY="365" width="200" height="100"><content textType="body" fontSize="13" color="rgba(30,41,59,1)" lineSpacing="multiple:1.8"><p><strong>工程规范</strong></p><p>Git 分支管理</p><p>PR/Code Review</p><p>完整文档交付</p></content></shape>
+  </data>
+  <note><content textType="body"><p>本实验的背景是开源软件已成为现代软件开发的基石，要求我们基于成熟开源项目进行二次开发。核心目标包括四个方面：搭建可运行的博客系统、实现四大核心功能、开发自定义主题和自主扩展、遵循开源规范完成版本管理。功能需求涵盖用户管理、内容管理、互动功能和工程规范四大类。</p></content></note>
+</slide>

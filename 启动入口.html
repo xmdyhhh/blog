@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开源软件实验博客 - 启动入口</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+        .status {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .status-item:last-child { border-bottom: none; }
+        .status-label { color: #666; }
+        .status-value { font-weight: 600; color: #333; }
+        .status-value.ok { color: #28a745; }
+        .status-value.warn { color: #ffc107; }
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .btn-primary { background: #667eea; color: white; }
+        .btn-success { background: #28a745; color: white; }
+        .btn-warning { background: #ffc107; color: #333; }
+        .btn-info { background: #17a2b8; color: white; }
+        .btn-full { grid-column: 1 / -1; }
+        .info {
+            background: #e7f3ff;
+            border-left: 4px solid #17a2b8;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 13px;
+            color: #0c5460;
+            line-height: 1.6;
+        }
+        .info strong { display: block; margin-bottom: 4px; }
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 12px;
+            color: #999;
+        }
+        .badge {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">📝</div>
+            <h1>开源软件实验博客</h1>
+            <p class="subtitle">基于 Ghost v6.59.0 的个人博客系统二次开发 <span class="badge">实验01</span></p>
+        </div>
+
+        <div class="status">
+            <div class="status-item">
+                <span class="status-label">项目位置</span>
+                <span class="status-value">oss-blog/</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Ghost 版本</span>
+                <span class="status-value">v6.59.0</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Node.js 版本</span>
+                <span class="status-value">v22.23.1 (便携版)</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">自定义主题</span>
+                <span class="status-value ok">oss-blog-theme v1.0.0</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">演示数据</span>
+                <span class="status-value">9篇文章 / 4标签 / 2会员</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="启动博客.bat" class="btn btn-primary btn-full">🚀 一键启动博客</a>
+            <a href="http://localhost:2368" target="_blank" class="btn btn-success">🌐 访问前台</a>
+            <a href="http://localhost:2368/ghost" target="_blank" class="btn btn-info">⚙️ 管理后台</a>
+            <a href="停止博客.bat" class="btn btn-warning">⏹️ 停止博客</a>
+            <a href="README.md" class="btn btn-full" style="background:#6c757d;color:white;">📖 查看 README 文档</a>
+        </div>
+
+        <div class="info">
+            <strong>💡 使用说明</strong>
+            1. 点击"一键启动博客"启动 Ghost（首次启动需等待 30-60 秒）<br>
+            2. 启动后自动打开浏览器，或手动点击"访问前台"<br>
+            3. 管理后台账号：admin@ossblog.local / Admin@2026Lab!<br>
+            4. 演示会员：zhangsan@example.com / lisi@example.com<br>
+            5. 关闭启动窗口即可停止 Ghost，或点击"停止博客"
+        </div>
+
+        <div class="footer">
+            《开源软件与新技术》实验01 · 2026年9月 · MIT License
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿*   882cd7b (HEAD -> main, tag: v1.0-lab) merge: 合并自主扩展功能与测试文档到main
+|\  
+| * e77a7cf (feature/blog-enhancement) docs: 添加PR与Code Review记录
+| * e55126a docs: 完善README、NOTICE和备份恢复文档
+| * 86e693c test: 编写20项验收测试用例并全部通过
+| * a94c800 feat(enhancement): 实现相关文章推荐与搜索增强功能
+| * 8103140 (feature/theme-customization) feat(theme): 基于 Source 主题开发自定义博客主题
+|/  
+* 900732e chore: 初始化项目骨架与基线配置

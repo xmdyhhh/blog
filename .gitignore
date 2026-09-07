@@ -43,3 +43,9 @@ npm-debug.log*
 # Test coverage
 coverage/
 .nyc_output/
+
+# PPT build artifacts
+ppt-slides/*-body.json
+ppt-slides/download.txt
+ppt-slides/params.json
+ppt-slides/full-deck.xml

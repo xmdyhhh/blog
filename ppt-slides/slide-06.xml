@@ -1,0 +1,23 @@
+<slide>
+  <style><fill><fillColor color="rgb(248,250,252)"/></fill></style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="960" height="70"><fill><fillColor color="linear-gradient(90deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/></fill></shape>
+    <shape type="text" topLeftX="50" topLeftY="15" width="700" height="40"><content textType="headline" fontSize="24" color="rgba(255,255,255,1)" bold="true"><p>04 自定义主题开发</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="95" width="270" height="190" presetHandlers="10"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="rect" topLeftX="50" topLeftY="95" width="270" height="40" presetHandlers="10"><fill><fillColor color="rgba(59,130,246,1)"/></fill></shape>
+    <shape type="text" topLeftX="60" topLeftY="102" width="250" height="26"><content textType="body" fontSize="14" color="rgba(255,255,255,1)" bold="true" textAlign="center"><p>导航栏定制</p></content></shape>
+    <shape type="text" topLeftX="65" topLeftY="150" width="240" height="120"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p>导航项全面中文化</p></li><li><p>oss- 类名前缀区分</p></li><li><p>aria-label 无障碍增强</p></li><li><p>毛玻璃背景效果</p></li><li><p>滚动时阴影变化</p></li></ul></content></shape>
+    <shape type="round-rect" topLeftX="345" topLeftY="95" width="270" height="190" presetHandlers="10"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="rect" topLeftX="345" topLeftY="95" width="270" height="40" presetHandlers="10"><fill><fillColor color="rgba(16,185,129,1)"/></fill></shape>
+    <shape type="text" topLeftX="355" topLeftY="102" width="250" height="26"><content textType="body" fontSize="14" color="rgba(255,255,255,1)" bold="true" textAlign="center"><p>文章卡片定制</p></content></shape>
+    <shape type="text" topLeftX="360" topLeftY="150" width="240" height="120"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p>显示预计阅读时间</p></li><li><p>中文日期格式</p></li><li><p># 标签图标展示</p></li><li><p>悬停上浮动画效果</p></li><li><p>卡片阴影层次感</p></li></ul></content></shape>
+    <shape type="round-rect" topLeftX="640" topLeftY="95" width="270" height="190" presetHandlers="10"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="rect" topLeftX="640" topLeftY="95" width="270" height="40" presetHandlers="10"><fill><fillColor color="rgba(245,158,11,1)"/></fill></shape>
+    <shape type="text" topLeftX="650" topLeftY="102" width="250" height="26"><content textType="body" fontSize="14" color="rgba(255,255,255,1)" bold="true" textAlign="center"><p>样式系统增强</p></content></shape>
+    <shape type="text" topLeftX="655" topLeftY="150" width="240" height="120"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p>oss-custom.css 373行</p></li><li><p>完整响应式断点</p></li><li><p>高对比度模式支持</p></li><li><p>减少动画偏好支持</p></li><li><p>搜索弹窗专属样式</p></li></ul></content></shape>
+    <shape type="text" topLeftX="50" topLeftY="305" width="860" height="28"><content textType="sub-headline" fontSize="16" color="rgba(30,58,138,1)" bold="true"><p>主题文件结构</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="340" width="860" height="175" presetHandlers="10"><fill><fillColor color="rgba(15,23,42,1)"/></fill></shape>
+    <shape type="text" topLeftX="70" topLeftY="352" width="820" height="155"><content textType="body" fontSize="11" color="rgba(148,163,184,1)" fontFamily="Consolas" lineSpacing="multiple:1.4"><p>oss-blog-theme/</p><p>├── package.json          <span color="rgba(16,185,129,1)"># 主题配置 v1.0.0</span></p><p>├── default.hbs           <span color="rgba(245,158,11,1)"># 修改：添加自定义资源引用</span></p><p>├── post.hbs              <span color="rgba(245,158,11,1)"># 修改：相关文章推荐区域</span></p><p>├── partials/</p><p>│   ├── components/navigation.hbs  <span color="rgba(245,158,11,1)"># 修改：中文化+无障碍</span></p><p>│   └── post-card.hbs              <span color="rgba(245,158,11,1)"># 修改：阅读时间+日期</span></p><p>└── assets/</p><p>    ├── css/oss-custom.css         <span color="rgba(59,130,246,1)"># 新增：373行自定义样式</span></p><p>    └── js/oss-search.js           <span color="rgba(59,130,246,1)"># 新增：401行搜索增强</span></p></content></shape>
+  </data>
+  <note><content textType="body"><p>自定义主题开发基于 Ghost 官方 Source 主题，主要做了三方面定制：导航栏中文化和无障碍增强、文章卡片添加阅读时间和中文日期、样式系统新增373行自定义CSS。主题文件结构清晰，新增文件用 oss- 前缀，修改文件保留原始结构。主题已打包为可安装的 zip 压缩包，大小327KB，可以直接在 Ghost 管理后台上传安装。</p></content></note>
+</slide>

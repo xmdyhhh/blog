@@ -1,0 +1,39 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="linear-gradient(135deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="140" width="800" height="80">
+      <content textType="title" fontSize="44" color="rgba(255,255,255,1)" textAlign="center" bold="true">
+        <p>实验01 开源个人博客系统二次开发</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="240" width="800" height="50">
+      <content textType="sub-headline" fontSize="22" color="rgba(191,219,254,1)" textAlign="center">
+        <p>基于 Ghost v6.59.0 的可注册、可写作、可评论、可搜索博客系统</p>
+      </content>
+    </shape>
+    <shape type="rect" topLeftX="380" topLeftY="320" width="200" height="4" presetHandlers="2">
+      <fill>
+        <fillColor color="rgba(255,255,255,0.6)"/>
+      </fill>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="360" width="800" height="40">
+      <content textType="body" fontSize="16" color="rgba(219,234,254,1)" textAlign="center">
+        <p>《开源软件与新技术》课程实验 · 2026年9月</p>
+      </content>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="420" width="800" height="30">
+      <content textType="caption" fontSize="13" color="rgba(147,197,253,1)" textAlign="center">
+        <p>上游项目：Ghost (MIT License) · 自定义主题：oss-blog-theme v1.0.0</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>各位老师好，我是本次实验的汇报人。今天我将汇报实验01——开源个人博客系统二次开发。本实验基于 Ghost 开源博客平台，完成了一个可注册、可写作、可评论、可搜索的个人博客系统，并实现了相关文章推荐和搜索增强两项自主扩展功能。</p>
+    </content>
+  </note>
+</slide>

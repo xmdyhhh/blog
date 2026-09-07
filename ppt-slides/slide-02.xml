@@ -1,0 +1,94 @@
+<slide>
+  <style>
+    <fill>
+      <fillColor color="rgb(248,250,252)"/>
+    </fill>
+  </style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="8" height="540">
+      <fill>
+        <fillColor color="rgba(59,130,246,1)"/>
+      </fill>
+    </shape>
+    <shape type="text" topLeftX="60" topLeftY="50" width="400" height="50">
+      <content textType="title" fontSize="32" color="rgba(30,58,138,1)" bold="true">
+        <p>汇报目录</p>
+      </content>
+    </shape>
+    <shape type="rect" topLeftX="60" topLeftY="110" width="60" height="4" presetHandlers="2">
+      <fill>
+        <fillColor color="rgba(59,130,246,1)"/>
+      </fill>
+    </shape>
+    <shape type="round-rect" topLeftX="60" topLeftY="150" width="400" height="55" presetHandlers="8">
+      <fill><fillColor color="rgba(255,255,255,1)"/></fill>
+      <border color="rgba(226,232,240,1)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="158" width="30" height="40">
+      <content textType="headline" fontSize="20" color="rgba(59,130,246,1)" bold="true" textAlign="center"><p>01</p></content>
+    </shape>
+    <shape type="text" topLeftX="120" topLeftY="162" width="320" height="35">
+      <content textType="body" fontSize="16" color="rgba(30,41,59,1)" bold="true"><p>项目背景与目标</p></content>
+    </shape>
+    <shape type="round-rect" topLeftX="60" topLeftY="220" width="400" height="55" presetHandlers="8">
+      <fill><fillColor color="rgba(255,255,255,1)"/></fill>
+      <border color="rgba(226,232,240,1)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="228" width="30" height="40">
+      <content textType="headline" fontSize="20" color="rgba(59,130,246,1)" bold="true" textAlign="center"><p>02</p></content>
+    </shape>
+    <shape type="text" topLeftX="120" topLeftY="232" width="320" height="35">
+      <content textType="body" fontSize="16" color="rgba(30,41,59,1)" bold="true"><p>技术选型与系统架构</p></content>
+    </shape>
+    <shape type="round-rect" topLeftX="60" topLeftY="290" width="400" height="55" presetHandlers="8">
+      <fill><fillColor color="rgba(255,255,255,1)"/></fill>
+      <border color="rgba(226,232,240,1)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="80" topLeftY="298" width="30" height="40">
+      <content textType="headline" fontSize="20" color="rgba(59,130,246,1)" bold="true" textAlign="center"><p>03</p></content>
+    </shape>
+    <shape type="text" topLeftX="120" topLeftY="302" width="320" height="35">
+      <content textType="body" fontSize="16" color="rgba(30,41,59,1)" bold="true"><p>自定义主题与自主扩展</p></content>
+    </shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="150" width="400" height="55" presetHandlers="8">
+      <fill><fillColor color="rgba(255,255,255,1)"/></fill>
+      <border color="rgba(226,232,240,1)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="158" width="30" height="40">
+      <content textType="headline" fontSize="20" color="rgba(59,130,246,1)" bold="true" textAlign="center"><p>04</p></content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="162" width="320" height="35">
+      <content textType="body" fontSize="16" color="rgba(30,41,59,1)" bold="true"><p>测试结果与质量保障</p></content>
+    </shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="220" width="400" height="55" presetHandlers="8">
+      <fill><fillColor color="rgba(255,255,255,1)"/></fill>
+      <border color="rgba(226,232,240,1)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="228" width="30" height="40">
+      <content textType="headline" fontSize="20" color="rgba(59,130,246,1)" bold="true" textAlign="center"><p>05</p></content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="232" width="320" height="35">
+      <content textType="body" fontSize="16" color="rgba(30,41,59,1)" bold="true"><p>Git 版本管理与开源规范</p></content>
+    </shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="290" width="400" height="55" presetHandlers="8">
+      <fill><fillColor color="rgba(255,255,255,1)"/></fill>
+      <border color="rgba(226,232,240,1)" width="1"/>
+    </shape>
+    <shape type="text" topLeftX="520" topLeftY="298" width="30" height="40">
+      <content textType="headline" fontSize="20" color="rgba(59,130,246,1)" bold="true" textAlign="center"><p>06</p></content>
+    </shape>
+    <shape type="text" topLeftX="560" topLeftY="302" width="320" height="35">
+      <content textType="body" fontSize="16" color="rgba(30,41,59,1)" bold="true"><p>问题反思与总结</p></content>
+    </shape>
+    <shape type="text" topLeftX="60" topLeftY="420" width="840" height="60">
+      <content textType="body" fontSize="14" color="rgba(100,116,139,1)" textAlign="center">
+        <p>本次汇报约 8 分钟，包含 Live Demo 现场演示环节</p>
+      </content>
+    </shape>
+  </data>
+  <note>
+    <content textType="body">
+      <p>本次汇报分为六个部分：首先介绍项目背景与目标，然后讲解技术选型和系统架构，接着重点展示自定义主题和两项自主扩展功能，之后汇报测试结果，再说明 Git 版本管理和开源规范的实践，最后进行问题反思与总结。汇报过程中会穿插 Live Demo 现场演示。</p>
+    </content>
+  </note>
+</slide>

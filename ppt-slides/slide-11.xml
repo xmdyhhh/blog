@@ -1,0 +1,23 @@
+<slide>
+  <style><fill><fillColor color="rgb(248,250,252)"/></fill></style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="960" height="70"><fill><fillColor color="linear-gradient(90deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/></fill></shape>
+    <shape type="text" topLeftX="50" topLeftY="15" width="700" height="40"><content textType="headline" fontSize="24" color="rgba(255,255,255,1)" bold="true"><p>09 问题反思与改进方向</p></content></shape>
+    <shape type="text" topLeftX="50" topLeftY="90" width="420" height="28"><content textType="sub-headline" fontSize="16" color="rgba(153,27,27,1)" bold="true"><p>遇到的主要问题</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="125" width="420" height="90" presetHandlers="8"><fill><fillColor color="rgba(254,242,242,1)"/></fill><border color="rgba(252,165,165,1)" width="1"/></shape>
+    <shape type="text" topLeftX="65" topLeftY="135" width="390" height="70"><content textType="body" fontSize="12" color="rgba(127,29,29,1)" lineSpacing="multiple:1.6"><p><strong>Node.js 版本不兼容</strong></p><p>系统默认 Node v24 与 Ghost v6.59.0 不兼容（要求 ^22.23.1）。解决方案：下载 Node v22 便携版到项目目录，创建包装脚本切换运行环境。</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="225" width="420" height="90" presetHandlers="8"><fill><fillColor color="rgba(254,242,242,1)"/></fill><border color="rgba(252,165,165,1)" width="1"/></shape>
+    <shape type="text" topLeftX="65" topLeftY="235" width="390" height="70"><content textType="body" fontSize="12" color="rgba(127,29,29,1)" lineSpacing="multiple:1.6"><p><strong>原生模块编译失败</strong></p><p>better-sqlite3/re2 模块需要 VS C++ 构建工具。解决方案：设置 npm 预编译二进制镜像，直接下载预编译版本，绕过本地编译。</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="325" width="420" height="90" presetHandlers="8"><fill><fillColor color="rgba(254,242,242,1)"/></fill><border color="rgba(252,165,165,1)" width="1"/></shape>
+    <shape type="text" topLeftX="65" topLeftY="335" width="390" height="70"><content textType="body" fontSize="12" color="rgba(127,29,29,1)" lineSpacing="multiple:1.6"><p><strong>gscan 主题校验工具</strong></p><p>因网络环境无法安装运行 gscan。处理方式：记录为已知限制，主题基于官方 Source 开发，兼容性有上游保障，后续可在网络正常时补做。</p></content></shape>
+    <shape type="text" topLeftX="500" topLeftY="90" width="410" height="28"><content textType="sub-headline" fontSize="16" color="rgba(22,101,52,1)" bold="true"><p>收获与改进方向</p></content></shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="125" width="410" height="90" presetHandlers="8"><fill><fillColor color="rgba(240,253,244,1)"/></fill><border color="rgba(134,239,172,1)" width="1"/></shape>
+    <shape type="text" topLeftX="515" topLeftY="135" width="380" height="70"><content textType="body" fontSize="12" color="rgba(20,83,45,1)" lineSpacing="multiple:1.6"><p><strong>主要收获</strong></p><p>深入理解了 Ghost 架构和主题系统；掌握了 Handlebar 模板引擎；学会了在成熟开源项目基础上进行二次开发的方法论；实践了 Git 分支管理和 Code Review 流程。</p></content></shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="225" width="410" height="90" presetHandlers="8"><fill><fillColor color="rgba(254,249,195,1)"/></fill><border color="rgba(250,204,21,1)" width="1"/></shape>
+    <shape type="text" topLeftX="515" topLeftY="235" width="380" height="70"><content textType="body" fontSize="12" color="rgba(113,63,18,1)" lineSpacing="multiple:1.6"><p><strong>短期改进</strong></p><p>补做 gscan 主题校验；增加更多自动化测试；优化搜索结果排序算法；添加文章阅读量统计；完善 SEO 元数据配置。</p></content></shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="325" width="410" height="90" presetHandlers="8"><fill><fillColor color="rgba(239,246,255,1)"/></fill><border color="rgba(147,197,253,1)" width="1"/></shape>
+    <shape type="text" topLeftX="515" topLeftY="335" width="380" height="70"><content textType="body" fontSize="12" color="rgba(30,58,138,1)" lineSpacing="multiple:1.6"><p><strong>长期规划</strong></p><p>将自定义主题发布为开源项目；贡献代码回上游 Ghost；探索 Ghost 的 Members 订阅功能；集成第三方评论系统；搭建 CI/CD 自动化部署流程。</p></content></shape>
+    <shape type="text" topLeftX="50" topLeftY="435" width="860" height="40"><content textType="body" fontSize="13" color="rgba(71,85,105,1)" textAlign="center" italic="true"><p>"开源不仅仅是使用代码，更是参与社区、贡献价值、共同成长。"</p></content></shape>
+  </data>
+  <note><content textType="body"><p>问题反思方面，我们遇到了三个主要问题：Node.js 版本不兼容、原生模块编译失败、gscan 工具无法安装。每个问题都有对应的解决方案和记录。收获方面，我们深入理解了 Ghost 架构，掌握了 Handlebars 模板引擎，学会了开源项目二次开发的方法论。改进方向分为短期和长期：短期包括补做校验、增加测试、优化算法；长期包括将主题开源、贡献上游、探索更多功能。</p></content></note>
+</slide>

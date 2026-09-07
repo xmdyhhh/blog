@@ -1,0 +1,14 @@
+<slide>
+  <style><fill><fillColor color="linear-gradient(135deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/></fill></style>
+  <data>
+    <shape type="text" topLeftX="80" topLeftY="80" width="800" height="60"><content textType="title" fontSize="40" color="rgba(255,255,255,1)" textAlign="center" bold="true"><p>总结与致谢</p></content></shape>
+    <shape type="rect" topLeftX="380" topLeftY="155" width="200" height="3" presetHandlers="2"><fill><fillColor color="rgba(255,255,255,0.5)"/></fill></shape>
+    <shape type="round-rect" topLeftX="80" topLeftY="185" width="800" height="140" presetHandlers="12"><fill><fillColor color="rgba(255,255,255,0.1)"/></fill><border color="rgba(255,255,255,0.3)" width="1"/></shape>
+    <shape type="text" topLeftX="100" topLeftY="200" width="760" height="110"><content textType="body" fontSize="14" color="rgba(219,234,254,1)" textAlign="center" lineSpacing="multiple:1.8"><p>本实验基于 Ghost v6.59.0 开源博客平台，完成了一个功能完整的个人博客系统。</p><p>实现了可注册、可写作、可评论、可搜索四大核心功能，开发了自定义主题 oss-blog-theme，</p><p>并完成了相关文章推荐和搜索增强两项自主扩展功能。</p><p>20项验收测试全部通过，遵循开源规范完成 Git 版本管理与完整文档交付。</p></content></shape>
+    <shape type="text" topLeftX="80" topLeftY="350" width="800" height="30"><content textType="sub-headline" fontSize="18" color="rgba(255,255,255,1)" textAlign="center" bold="true"><p>交付物清单</p></content></shape>
+    <shape type="text" topLeftX="120" topLeftY="390" width="320" height="80"><content textType="body" fontSize="12" color="rgba(191,219,254,1)" lineSpacing="multiple:1.7"><p>可运行博客系统（Ghost + 自定义主题）</p><p>主题压缩包 oss-blog-theme.zip</p><p>一键启动入口（HTML + BAT）</p><p>20项验收测试报告</p></content></shape>
+    <shape type="text" topLeftX="520" topLeftY="390" width="320" height="80"><content textType="body" fontSize="12" color="rgba(191,219,254,1)" lineSpacing="multiple:1.7"><p>完整实验报告（约8000字）</p><p>上游基线差异清单</p><p>Git 证据对照表</p><p>PR/Code Review 记录 + 运行截图</p></content></shape>
+    <shape type="text" topLeftX="80" topLeftY="485" width="800" height="35"><content textType="body" fontSize="16" color="rgba(255,255,255,1)" textAlign="center" bold="true"><p>感谢各位老师的聆听与指导！</p></content></shape>
+  </data>
+  <note><content textType="body"><p>最后做一个总结。本实验基于 Ghost v6.59.0 完成了一个功能完整的个人博客系统，实现了四大核心功能，开发了自定义主题，完成了两项自主扩展功能，20项测试全部通过。交付物包括可运行系统、主题压缩包、一键启动入口、测试报告、实验报告、差异清单、Git证据对照表等。感谢各位老师的聆听与指导，欢迎提问！</p></content></note>
+</slide>

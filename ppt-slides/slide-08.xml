@@ -1,0 +1,25 @@
+<slide>
+  <style><fill><fillColor color="rgb(248,250,252)"/></fill></style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="960" height="70"><fill><fillColor color="linear-gradient(90deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/></fill></shape>
+    <shape type="text" topLeftX="50" topLeftY="15" width="800" height="40"><content textType="headline" fontSize="24" color="rgba(255,255,255,1)" bold="true"><p>06 自主扩展二：搜索增强</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="95" width="270" height="160" presetHandlers="10"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="text" topLeftX="65" topLeftY="108" width="240" height="25"><content textType="sub-headline" fontSize="14" color="rgba(30,58,138,1)" bold="true"><p>快捷键唤起</p></content></shape>
+    <shape type="text" topLeftX="65" topLeftY="140" width="240" height="100"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p>Ctrl/Cmd + K 快捷键</p></li><li><p>模态弹窗展示</p></li><li><p>ESC 键关闭</p></li><li><p>点击遮罩关闭</p></li><li><p>自动聚焦输入框</p></li></ul></content></shape>
+    <shape type="round-rect" topLeftX="345" topLeftY="95" width="270" height="160" presetHandlers="10"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="text" topLeftX="360" topLeftY="108" width="240" height="25"><content textType="sub-headline" fontSize="14" color="rgba(30,58,138,1)" bold="true"><p>智能搜索体验</p></content></shape>
+    <shape type="text" topLeftX="360" topLeftY="140" width="240" height="100"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p>关键词 mark 高亮</p></li><li><p>300ms 防抖请求</p></li><li><p>加载动画反馈</p></li><li><p>上下箭头键盘导航</p></li><li><p>Enter 跳转首条结果</p></li></ul></content></shape>
+    <shape type="round-rect" topLeftX="640" topLeftY="95" width="270" height="160" presetHandlers="10"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="text" topLeftX="655" topLeftY="108" width="240" height="25"><content textType="sub-headline" fontSize="14" color="rgba(30,58,138,1)" bold="true"><p>无结果智能建议</p></content></shape>
+    <shape type="text" topLeftX="655" topLeftY="140" width="240" height="100"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p>显示热门标签列表</p></li><li><p>点击标签自动搜索</p></li><li><p>友好的空状态提示</p></li><li><p>搜索历史记录</p></li><li><p>结果数量统计</p></li></ul></content></shape>
+    <shape type="text" topLeftX="50" topLeftY="275" width="420" height="28"><content textType="sub-headline" fontSize="15" color="rgba(30,58,138,1)" bold="true"><p>技术架构</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="310" width="420" height="100" presetHandlers="8"><fill><fillColor color="rgba(15,23,42,1)"/></fill></shape>
+    <shape type="text" topLeftX="65" topLeftY="322" width="390" height="80"><content textType="body" fontSize="11" color="rgba(148,163,184,1)" fontFamily="Consolas" lineSpacing="multiple:1.5"><p>用户输入 → 300ms防抖 → Ghost Content API</p><p>     ↓</p><p>  解析JSON → 关键词高亮 → 渲染结果列表</p><p>     ↓</p><p>  无结果 → 获取热门标签 → 显示建议</p></content></shape>
+    <shape type="text" topLeftX="500" topLeftY="275" width="410" height="28"><content textType="sub-headline" fontSize="15" color="rgba(30,58,138,1)" bold="true"><p>安全设计</p></content></shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="310" width="410" height="100" presetHandlers="8"><fill><fillColor color="rgba(240,253,244,1)"/></fill><border color="rgba(134,239,172,1)" width="1"/></shape>
+    <shape type="text" topLeftX="515" topLeftY="322" width="380" height="80"><content textType="body" fontSize="12" color="rgba(22,101,52,1)" lineSpacing="multiple:1.6"><ul><li><p>仅使用 Content API（只读 Key）</p></li><li><p>不暴露 Admin API Key</p></li><li><p>XSS 防护：文本转义后渲染</p></li><li><p>请求失败优雅降级</p></li></ul></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="430" width="860" height="65" presetHandlers="8"><fill><fillColor color="rgba(239,246,255,1)"/></fill><border color="rgba(147,197,253,1)" width="1"/></shape>
+    <shape type="text" topLeftX="70" topLeftY="442" width="820" height="45"><content textType="body" fontSize="12" color="rgba(30,58,138,1)" lineSpacing="multiple:1.6"><p><strong>实现规模：</strong>oss-search.js 共 401 行纯前端 JavaScript，零依赖，兼容现代浏览器。通过 TC-007（搜索命中）、TC-008（无结果提示）、TC-015（键盘可访问）三项测试用例验证。</p></content></shape>
+  </data>
+  <note><content textType="body"><p>第二项自主扩展功能是搜索增强。这是一个纯前端实现的搜索功能，共401行JavaScript代码，零外部依赖。核心特性包括：Ctrl/Cmd+K快捷键唤起模态弹窗、关键词高亮显示、300ms防抖优化请求、上下箭头键盘导航、无结果时显示热门标签建议。安全设计上仅使用只读的Content API Key，不暴露Admin Key，并有XSS防护。这项功能通过了三项测试用例的验证。</p></content></note>
+</slide>

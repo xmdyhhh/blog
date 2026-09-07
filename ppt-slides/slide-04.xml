@@ -1,0 +1,33 @@
+<slide>
+  <style><fill><fillColor color="rgb(248,250,252)"/></fill></style>
+  <data>
+    <shape type="rect" topLeftX="0" topLeftY="0" width="960" height="70"><fill><fillColor color="linear-gradient(90deg,rgba(30,58,138,1) 0%,rgba(59,130,246,1) 100%)"/></fill></shape>
+    <shape type="text" topLeftX="50" topLeftY="15" width="600" height="40"><content textType="headline" fontSize="24" color="rgba(255,255,255,1)" bold="true"><p>02 技术选型与系统架构</p></content></shape>
+    <shape type="text" topLeftX="50" topLeftY="90" width="400" height="28"><content textType="sub-headline" fontSize="16" color="rgba(30,58,138,1)" bold="true"><p>技术栈选型</p></content></shape>
+    <table topLeftX="50" topLeftY="125" width="420" height="200">
+      <colgroup><col width="120"/><col width="150"/><col width="150"/></colgroup>
+      <tr height="32"><td><fill><fillColor color="rgba(30,58,138,1)"/></fill><content textType="body" fontSize="12" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>层级</p></content></td><td><fill><fillColor color="rgba(30,58,138,1)"/></fill><content textType="body" fontSize="12" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>技术</p></content></td><td><fill><fillColor color="rgba(30,58,138,1)"/></fill><content textType="body" fontSize="12" bold="true" color="rgba(255,255,255,1)" textAlign="center"><p>版本</p></content></td></tr>
+      <tr height="32"><td><content textType="body" fontSize="11" textAlign="center"><p>运行时</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>Node.js LTS</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>v22.23.1</p></content></td></tr>
+      <tr height="32"><td><content textType="body" fontSize="11" textAlign="center"><p>博客核心</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>Ghost</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>v6.59.0</p></content></td></tr>
+      <tr height="32"><td><content textType="body" fontSize="11" textAlign="center"><p>数据库</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>SQLite3</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>内置</p></content></td></tr>
+      <tr height="32"><td><content textType="body" fontSize="11" textAlign="center"><p>主题引擎</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>Handlebars</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>v4.x</p></content></td></tr>
+      <tr height="32"><td><content textType="body" fontSize="11" textAlign="center"><p>前端样式</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>CSS3 + JS</p></content></td><td><content textType="body" fontSize="11" textAlign="center"><p>原生</p></content></td></tr>
+    </table>
+    <shape type="text" topLeftX="500" topLeftY="90" width="400" height="28"><content textType="sub-headline" fontSize="16" color="rgba(30,58,138,1)" bold="true"><p>选型理由</p></content></shape>
+    <shape type="round-rect" topLeftX="500" topLeftY="125" width="410" height="200" presetHandlers="8"><fill><fillColor color="rgba(255,255,255,1)"/></fill><border color="rgba(226,232,240,1)" width="1"/></shape>
+    <shape type="text" topLeftX="520" topLeftY="140" width="370" height="170"><content textType="body" fontSize="12" color="rgba(51,65,85,1)" lineSpacing="multiple:1.7"><ul><li><p><strong>Ghost</strong>：专业博客平台，MIT 开源协议，架构清晰，主题系统成熟，API 完善</p></li><li><p><strong>SQLite</strong>：零配置文件数据库，适合个人博客，便于备份迁移</p></li><li><p><strong>Handlebars</strong>：语义化模板引擎，Ghost 原生支持，学习成本低</p></li><li><p><strong>Node 22</strong>：Ghost 官方要求的 LTS 版本，兼容性有保障</p></li></ul></content></shape>
+    <shape type="text" topLeftX="50" topLeftY="345" width="860" height="28"><content textType="sub-headline" fontSize="16" color="rgba(30,58,138,1)" bold="true"><p>系统架构</p></content></shape>
+    <shape type="round-rect" topLeftX="50" topLeftY="380" width="180" height="100" presetHandlers="8"><fill><fillColor color="rgba(219,234,254,1)"/></fill><border color="rgba(96,165,250,1)" width="2"/></shape>
+    <shape type="text" topLeftX="50" topLeftY="400" width="180" height="60"><content textType="body" fontSize="13" color="rgba(30,58,138,1)" textAlign="center" bold="true" lineSpacing="multiple:1.5"><p>浏览器客户端</p><p>前台 + 管理后台</p></content></shape>
+    <line startX="230" startY="430" endX="290" endY="430"><border color="rgba(100,116,139,1)" width="2"/><endArrow type="arrow"/></line>
+    <shape type="round-rect" topLeftX="290" topLeftY="380" width="200" height="100" presetHandlers="8"><fill><fillColor color="rgba(191,219,254,1)"/></fill><border color="rgba(59,130,246,1)" width="2"/></shape>
+    <shape type="text" topLeftX="290" topLeftY="395" width="200" height="70"><content textType="body" fontSize="13" color="rgba(30,58,138,1)" textAlign="center" bold="true" lineSpacing="multiple:1.5"><p>Ghost 核心服务</p><p>Express + Handlebars</p><p>REST Admin/Content API</p></content></shape>
+    <line startX="490" startY="430" endX="550" endY="430"><border color="rgba(100,116,139,1)" width="2"/><endArrow type="arrow"/></line>
+    <shape type="round-rect" topLeftX="550" topLeftY="380" width="180" height="100" presetHandlers="8"><fill><fillColor color="rgba(219,234,254,1)"/></fill><border color="rgba(96,165,250,1)" width="2"/></shape>
+    <shape type="text" topLeftX="550" topLeftY="400" width="180" height="60"><content textType="body" fontSize="13" color="rgba(30,58,138,1)" textAlign="center" bold="true" lineSpacing="multiple:1.5"><p>自定义主题层</p><p>oss-blog-theme</p></content></shape>
+    <line startX="730" startY="430" endX="790" endY="430"><border color="rgba(100,116,139,1)" width="2"/><endArrow type="arrow"/></line>
+    <shape type="round-rect" topLeftX="790" topLeftY="380" width="120" height="100" presetHandlers="8"><fill><fillColor color="rgba(254,242,242,1)"/></fill><border color="rgba(248,113,113,1)" width="2"/></shape>
+    <shape type="text" topLeftX="790" topLeftY="405" width="120" height="50"><content textType="body" fontSize="13" color="rgba(153,27,27,1)" textAlign="center" bold="true" lineSpacing="multiple:1.5"><p>SQLite</p><p>数据持久化</p></content></shape>
+  </data>
+  <note><content textType="body"><p>技术选型方面，我们选择了 Ghost v6.59.0 作为博客核心，它采用 MIT 开源协议，架构清晰，主题系统成熟。数据库使用内置的 SQLite3，零配置且便于备份。模板引擎是 Handlebars，Ghost 原生支持。运行时使用 Node.js v22.23.1 LTS，这是 Ghost 官方要求的版本。系统架构分为四层：浏览器客户端、Ghost 核心服务、自定义主题层和 SQLite 数据层。</p></content></note>
+</slide>
