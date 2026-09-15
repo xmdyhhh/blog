@@ -49,3 +49,12 @@ ppt-slides/*-body.json
 ppt-slides/download.txt
 ppt-slides/params.json
 ppt-slides/full-deck.xml
+
+# 临时XML和调试文件
+s*.xml
+tmp.json
+readback.xml
+download.txt
+ppt-slides/tmp.json
+ppt-slides/exp01-*.xml
+ppt-slides/slide-*.xml

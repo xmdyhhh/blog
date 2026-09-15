@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;background:#1e1e2e;font-family:Consolas,Monaco,monospace;font-size:14px;line-height:1.55;padding:30px;color:#cdd6f4}
+.filename{color:#89b4fa;font-size:13px;margin-bottom:12px;letter-spacing:1px}
+.cmt{color:#6c7086}.kw{color:#cba6f7}.str{color:#a6e3a1}.fn{color:#89b4fa}.num{color:#fab387}
+</style></head><body>
+<div class="filename">theme/oss-blog-theme/assets/js/oss-search.js (核心逻辑)</div>
+<pre>
+<span class="cmt">// 配置: Content API Key 从主题注入</span>
+<span class="kw">const</span> CONFIG = {
+  apiUrl: location.origin + <span class="str">'/ghost/api/content/posts/'</span>,
+  apiKey: document.documentElement.dataset.contentApiKey,
+  searchDebounce: <span class="num">300</span>,   <span class="cmt">// 防抖300ms</span>
+  maxResults: <span class="num">10</span>
+};
+
+<span class="cmt">// Ctrl/Cmd + K 快捷键唤起</span>
+document.addEventListener(<span class="str">'keydown'</span>, (e) =&gt; {
+  <span class="kw">if</span> ((e.ctrlKey || e.metaKey) &amp;&amp; e.key === <span class="str">'k'</span>) {
+    e.preventDefault();
+    toggleSearch();
+  }
+});
+
+<span class="cmt">// 防抖搜索</span>
+input.addEventListener(<span class="str">'input'</span>, () =&gt; {
+  clearTimeout(timer);
+  timer = setTimeout(() =&gt; performSearch(query), <span class="num">300</span>);
+});
+
+<span class="cmt">// 调 Ghost Content API, 前端只暴露只读Key</span>
+<span class="kw">async function</span> <span class="fn">performSearch</span>(q) {
+  <span class="kw">const</span> url = CONFIG.apiUrl + <span class="str">'?key='</span> + CONFIG.apiKey
+    + <span class="str">'&amp;filter='</span> + encodeURIComponent(<span class="str">'(title:~'</span>+q+<span class="str">',excerpt:~'</span>+q+<span class="str">')'</span>);
+  <span class="kw">const</span> {posts} = <span class="kw">await</span> fetch(url).then(r=&gt;r.json());
+  renderResults(posts, q);  <span class="cmt">// 关键词高亮+键盘导航</span>
+}
+
+<span class="cmt">// 无结果时推荐热门标签</span>
+<span class="kw">function</span> <span class="fn">getNoResults</span>(q) {
+  <span class="kw">return</span> <span class="str">`未找到&quot;${q}&quot;, 试试: #开源软件 #技术教程 #Node.js`</span>;
+}
+</pre>
+</body></html>

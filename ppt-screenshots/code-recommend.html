@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;background:#1e1e2e;font-family:Consolas,Monaco,monospace;font-size:15px;line-height:1.6;padding:30px;color:#cdd6f4}
+.filename{color:#89b4fa;font-size:13px;margin-bottom:12px;letter-spacing:1px}
+.cmt{color:#6c7086}.kw{color:#cba6f7}.str{color:#a6e3a1}.fn{color:#89b4fa}.tag{color:#f38ba8}
+</style></head><body>
+<div class="filename">theme/oss-blog-theme/post.hbs (第70-100行)</div>
+<pre>
+<span class="cmt">{{!-- 自主功能: 相关文章推荐 --}}</span>
+<span class="kw">{{#if</span> @custom.show_related_articles<span class="kw">}}</span>
+  <span class="tag">&lt;section</span> <span class="fn">class</span>=<span class="str">"oss-related-posts"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>相关文章推荐<span class="tag">&lt;/h2&gt;</span>
+    <span class="cmt">{{!-- 查同标签文章, 排除当前 --}}</span>
+    <span class="kw">{{#get</span> <span class="str">"posts"</span> include=<span class="str">"authors,tags"</span>
+      filter=<span class="str">"primary_tag:{{primary_tag.slug}}+id:-{{id}}"</span>
+      limit=<span class="str">"4"</span> <span class="kw">as</span> |related|<span class="kw">}}</span>
+      <span class="kw">{{#if</span> related<span class="kw">}}</span>
+        <span class="kw">{{#foreach</span> related<span class="kw">}}</span>
+          <span class="tag">&lt;article&gt;</span>{{title}}<span class="tag">&lt;/article&gt;</span>
+        <span class="kw">{{/foreach}}</span>
+      <span class="kw">{{else}}</span>
+        <span class="cmt">{{!-- 无同标签则回退最新 --}}</span>
+        <span class="kw">{{#get</span> <span class="str">"posts"</span> filter=<span class="str">"id:-{{id}}"</span> limit=<span class="str">"4"</span><span class="kw">}}</span>
+          暂无同标签文章, 推荐最新内容
+        <span class="kw">{{/get}}</span>
+      <span class="kw">{{/if}}</span>
+    <span class="kw">{{/get}}</span>
+  <span class="tag">&lt;/section&gt;</span>
+<span class="kw">{{/if}}</span>
+</pre>
+</body></html>
